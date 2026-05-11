@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <!-- saved from url=(0030)http://zqclaw.vybfi.top:12312/ -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <script type="module" src="./2026 FIFA 世界杯冠军预测器 - 专业版 v2.2 玄学版_files/client"></script>
+  <script type="module" src="./2026 FIFA 世界杯玄学预测器 - 专业版 v2.2 玄学版_files/client"></script>
 
  
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>2026 FIFA 世界杯冠军预测器 - 专业版 v2.2 玄学版</title>
+ <title>2026 FIFA 世界杯玄学预测器 - 专业版 v2.2 玄学版</title>
  <style>
 :root {--color-primary:#000;--color-on-primary:#FFF;--color-canvas:#FFF;--color-hairline:#F5F5F5;--color-hairline-soft:#E5E5E5;--color-scrim:#1A1A1A;--color-footer:#0A0A0A;--color-ink:#0F0F0F;--color-graphite:#525252;--color-slate:#64748B;--color-stone:#D4D4D4;--font-family:'Inter',-apple-system,sans-serif;--spacing-lg:24px;--spacing-xl:32px;--rounded-sm:6px;--rounded-md:8px;--rounded-lg:16px;--rounded-full:9999px}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font-family)}
@@ -98,28 +98,18 @@ button{width:100%;height:48px}
 <body>
  <div class="container">
  <header>
- <h1>🏆 2026 FIFA 世界杯冠军预测器</h1>
- <p class="subtitle">专业版 v2.2 | 数据预测 + 玄学预测（塔罗 + 星座 + 易经）</p>
+ <h1>🏆 2026 FIFA 世界杯玄学预测器</h1>
+ <p class="subtitle">玄学版 v2.2 | 塔罗 + 星座 + 易经</p>
  <div>
- <span class="info-badge" id="modeBadge">📡 实时数据</span>
- <span class="info-badge" id="dataBadge">📡 实时</span>
+ <span class="info-badge" id="modeBadge">🔮 玄学预测</span>
+ <span class="info-badge" id="dataBadge">🃏 塔罗</span>
  <span class="info-badge" id="versionBadge">🔮 算法 v2.2</span>
  </div>
  </header>
 
  <!-- 选项卡 -->
- <div class="card">
- <div class="tabs">
- 
- 
- <button class="tab active" onclick="switchTab('metaphysics')">🔮 玄学预测</button>
- 
- 
- 
- </div>
-
- <!-- 玄学预测选项卡 -->
- <div id="tab-metaphysics" class="tab-content">
+ <div class="card"> <!-- 玄学预测选项卡 -->
+ <div id="tab-metaphysics">
  <h2>🔮 玄学预测实验室</h2>
  
  <div class="algorithm-info" style="background: #F5F5F5;">
@@ -344,19 +334,11 @@ button{width:100%;height:48px}
  </div>
  </div>
 
- <!-- 数据源切换 -->
- <div class="card">
- <div class="mode-switch">
- <span>数据源：</span>
- <button class="mode-btn" onclick="setMode(&#39;local&#39;)" id="btnLocal">💾 本地数据（离线可用）</button>
- <button class="mode-btn active" onclick="setMode(&#39;live&#39;)" id="btnLive">📡 实时 API（需联网）</button>
- </div>
- <div id="statusBar" class="status-bar">✅ 实时数据加载成功！</div>
- </div>
+ 
 
  <div class="footer">
- <p>🌍 2026 世界杯预测器 | 专业版 v2.2 | 数据预测 + 玄学预测</p>
- <p style="margin-top: 10px; opacity: 0.8;">算法说明：加权多因子模型 | 赔率计算：包含 8% 庄家抽水 | 比分预测：泊松分布</p>
+ <p>🌍 2026 世界杯玄学预测器 | 玄学版 v2.2 | 塔罗 + 星座 + 易经</p>
+ <p style="margin-top: 10px; opacity: 0.8;">本功能仅供娱乐，无任何科学依据。信则灵，不信则乐。</p>
  </div>
  </div>
 
@@ -631,7 +613,7 @@ document.addEventListener('DOMContentLoaded', () => {
  API_BASE = 'http://localhost:5000';
  }
  localStorage.setItem('wc_api_base', API_BASE);
- document.getElementById('apiConfig').value = API_BASE;
+ 
  
  loadLocalData();
  renderAll();
